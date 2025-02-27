@@ -54,8 +54,8 @@ document.getElementById("add-to-cart").addEventListener("click", function () {
     const selectedSize = selectedSizeBtn.innerText.split("$")[0];
     const selectedPrize = selectedSizeBtn.innerText.split("$")[1];
 
-    cartItems.push({
-      image: "./images/" + seletedColor + ".png",
+    cartItems.push({ 
+      image: `./images/${seletedColor}.png`,
       title: "Classy Modern Smart Watch",
       color: seletedColor,
       size: selectedSize,
