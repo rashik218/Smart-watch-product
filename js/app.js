@@ -7,8 +7,8 @@ for (const ringBtn of ringButtonAll) {
     }
     ringBtn.classList.add("border-purple-600");
     const productImg = document.getElementById("product-image");
-    // productImg.src = "./images/" + color + ".png";
-    productImg.src = `./images/${color}.png`;
+    // productImg.src = "../images/" + color + ".png";
+    productImg.src = `../images/${color}.png`;
   });
 }
 
