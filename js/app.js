@@ -8,7 +8,7 @@ for (const ringBtn of ringButtonAll) {
     ringBtn.classList.add("border-purple-600");
     const productImg = document.getElementById("product-image");
     // productImg.src = "../images/" + color + ".png";
-    productImg.src = `../images/${color}.png`;
+    productImg.src = `./images/${color}.png`;
   });
 }
 
@@ -55,7 +55,7 @@ document.getElementById("add-to-cart").addEventListener("click", function () {
     const selectedPrize = selectedSizeBtn.innerText.split("$")[1];
 
     cartItems.push({
-      image: "../images/" + seletedColor + ".png",
+      image: "./images/" + seletedColor + ".png",
       title: "Classy Modern Smart Watch",
       color: seletedColor,
       size: selectedSize,
@@ -70,8 +70,7 @@ document.getElementById("add-to-cart").addEventListener("click", function () {
 const totalQuantity = document.getElementById("total-quantity");
 const totalPrize = document.getElementById("total-prize");
 
-document.getElementById("checkout-btn")
-.addEventListener("click", function () {
+document.getElementById("checkout-btn").addEventListener("click", function () {
   const cartModal = document.getElementById("cart-modal");
   const cartContainer = document.getElementById("cart-items");
   let totalCost = 0;
@@ -109,12 +108,11 @@ document.getElementById("checkout").addEventListener("click", function () {
   alert("Procceding to checkout");
 });
 
-
 document.getElementById("like").addEventListener("click", function () {
-  document.getElementById("like").classList.add('hidden');
-  document.getElementById("dislike").classList.remove('hidden');
+  document.getElementById("like").classList.add("hidden");
+  document.getElementById("dislike").classList.remove("hidden");
 });
 document.getElementById("dislike").addEventListener("click", function () {
-  document.getElementById("dislike").classList.add('hidden');
-  document.getElementById("like").classList.remove('hidden');
+  document.getElementById("dislike").classList.add("hidden");
+  document.getElementById("like").classList.remove("hidden");
 });
